@@ -57,9 +57,15 @@ ul li a{
    
 }
 .new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
     background-color: #00FF88;
      border-radius:30px ;
-     width:50px;
+     padding:4px 8px;
+     color: #1A0B2E;
+     box-shadow: 0 3 27 0 rgba(0, 255, 136, 0.5);
 }
 .hero-img{
     width: 100%;
@@ -108,10 +114,10 @@ ul li a{
 /* style about section */
 .about{
 background-color:#190D35;
- 
+
 }
 .about-content{
- max-width: 1200px;
+max-width: 1200px;
 margin: 0 auto;
 text-align: center;
 padding:50px ;
@@ -128,10 +134,34 @@ padding-top: 15px;
 padding-bottom: 50px;
 }
 
-.about-content hr{
-    color: #ffffff00;
+.about-img{
+    width: 100%;
 }
-@media screen  and (max-width: 576px){
+/* style card-section */
+.card-section{    
+    background-color:#190D35;
+    padding-bottom: 100px;
+    
+}
+.card-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat( 4 ,1fr);
+    text-align: center;
+}
+.card-title{
+font-size: 3rem;
+font-weight:900 ;
+color:#00FF88 ;
+}
+.card-subtitle{
+font-size:1rem ;
+color:#FFFFFF ;
+padding-bottom: 20px;
+}
+/* responsive */
+@media screen  and (max-width:576px){
    nav{
     display: none;
    } 
@@ -156,5 +186,26 @@ padding: 20px;
 }
 .hero-img{
  padding: 30px;
+}
+.about-content{
+max-width: 500px;
+padding:40px 20px;
+}
+
+.card-section{    
+    background-color:#190D35;
+    padding-bottom: 50px;
+    
+}
+.card-container{
+    max-width: 1200px;
+    grid-template-columns: repeat( 2 ,1fr);
+    text-align: center;
+}
+.card-title{
+font-size: 2.5rem;
+font-weight:900 ;
+color:#00FF88 ;
+border-bottom: 20px;
 }
 };
