@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+  background-color:#181446;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 200px;
+}
+.logo{
+    color: white;
+}
+#wave{
+    color:#9100F8 ;
+}
+ul{
+    display: flex;
+}
+ul li {
+    list-style: none
+}
+ul li a{
+    text-decoration: none;
+    margin-left: 50px;
+    font-size:16px ;
+    font-weight:500 ;
+    color:#FFFFFF ;
+}
+
+.btn{
+    padding:12px 16px ;
+    border: none;
+    font-size:16px ;
+    font-weight:600 ;
+    border-radius:30px ;
+    background: linear-gradient(45deg ,#F7E93F 0%, #FB09B4 50%,#9100F8 100%) ;
+    color:#FFFFFF ;
+}
+#hamburger-menu{
+    display: none;
+}
+/* style hero section */
+.hero{
+   
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+   
+}
+
+.hero-img{
+    background-image: url(../assets/hero-circle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+background-size: contain;
+}
+@media screen  and (max-width: 576px){
+    
+ nav , button{
+    display: none;
+}
+#hamburger-menu{
+    display: inline;
+  
+   
+}
+header{
+max-width:450px ;
+padding: 20px;
+}
+}
