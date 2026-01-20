@@ -12,6 +12,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header{
   background-color:#190D35;
   display: flex;
@@ -52,10 +53,7 @@ ul li a{
     background-repeat: no-repeat;
     background-position: center ;
     background-size: cover;
-    padding: 100px 500px;
-
-    
-   
+    padding: 100px 500px;  
 }
 
 .hero-img{
@@ -88,6 +86,7 @@ ul li a{
 
 }
 .hero-title{
+    padding-top: 10px;
     font-size:4rem ;
     font-weight:800 ;
     color:#FFFFFF ;
@@ -220,8 +219,7 @@ grid-column:span 2 ;
 .chose-card{
     padding:40px;
     background-color:rgba(53, 17, 101, 0.4) ;
-    border-radius: 30px;
-   
+    border-radius: 30px;  
 }
 
 #card1{
@@ -241,7 +239,6 @@ grid-column:span 2 ;
     display: grid;
     grid-template-columns: repeat( 3 ,1fr);
     gap: 30px;
-
 }
 
 .clock{
@@ -252,13 +249,10 @@ grid-column:span 2 ;
 font-size: 1rem;
 font-weight: 500;
 color: #00FF88;
-
-
 }
 .featured-card{
     background-color: #250D44;
-    border-radius: 20px;
-   
+    border-radius: 20px;  
 }
 .feature-content{
     padding: 20px;
@@ -274,6 +268,7 @@ color: #00FF88;
    
 }
 .meet-container{
+    
      background-color: #250D44;
     max-width: 1200px;
     margin: 0 auto;
@@ -283,10 +278,49 @@ color: #00FF88;
     border-radius: 15px;
     align-items: center;
 }
+.meet-title{
+    padding-bottom: 50px;
+}
 .icon-box{
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+/* footer */
+footer{
+    background-image: url(../assets/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.footer-container{
+  padding: 100px 0; 
+     max-width:500px ;
+    margin: 0 auto;
+    text-align: center; 
+}
+.footer-img img{
+    width: 100%;
+}
+.social-img {
+    display: flex;
+    gap: 10px;
+}
+.social-img img{
+    height: 24px;
+    width: 24px;
+}
+.footer-social-imgs{
+     padding: 25px 0; 
+     gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+}
+.footer-p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
 }
 /* responsive */
 @media screen  and (max-width:576px){
@@ -297,7 +331,8 @@ color: #00FF88;
     display: none;
 }
 #hamburger-menu{
-    display: inline;   
+    display: inline; 
+    margin-right: 30px;  
 }
 header{
 max-width:576px ;
@@ -352,6 +387,18 @@ padding-bottom: 40px;
     padding: 40px  20px;
     grid-template-columns: repeat( 1 ,1fr);
     gap: 30px;
+}
 
+.meet-container{
+  flex-direction: column;
+  
+}
+.footer-img img{
+    width: 50%;
+}
+.footer-social-imgs{
+     padding: 20px 0; 
+
+    grid-template-columns: repeat(2 ,1fr);
 }
 };
