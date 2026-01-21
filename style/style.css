@@ -300,20 +300,23 @@ footer{
     margin: 0 auto;
     text-align: center; 
 }
-.footer-img img{
+/* .footer-img img{
     width: 100%;
-}
+} */
 .social-img {
+
     display: flex;
     gap: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
 }
-.social-img img{
-    height: 24px;
-    width: 24px;
+.social-img i {
+   font-size: 25px;
 }
 .footer-social-imgs{
      padding: 25px 0; 
-     gap: 10px;
+     gap: 5px;
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
 }
