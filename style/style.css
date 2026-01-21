@@ -400,12 +400,13 @@ padding-bottom: 40px;
     width: 50%;
 }
 .footer-social-imgs{
-     padding: 20px 0; 
+     padding: 20px; 
 
     grid-template-columns: repeat(2 ,1fr);
 }
 .social-img{
     padding-left: 20px;
+
 }
 
 }
